@@ -18,12 +18,24 @@
 
     <header>
         <nav class="navbar o-navbar"> <!-- o-navbar clase para dar estilo al nav sin interferir con bootstrap -->
-            <div class="container-fluid list-inline">
-                <a class="navbar-brand list-inline-item" href="#">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
                   <img src="multimedia/cropped-ipisa.png" alt="Logo" width="50" height="50">
                   <h2 class="list-inline-item">Instituto Politécnico Industrial de Santiago</h2> 
                 </a>
-                
+                <div class="inline-list">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               
         </nav>
@@ -32,18 +44,13 @@
       
       <main class="container o-container">
         <div class="container">
-            <div class="col-md-7">
-                <h1 class="h1">¿Quiénes somos?</h2>
-                <p class="lead">El Instituto Politécnico Industrial de Santiago (IPISA), es una institución educativa técnico profesional 
-                    con uno de los más altos niveles de expansión y crecimiento en este tipo de modelo de educación, 
-                    así como también, acorde a la vanguardia de los nuevos tiempos.
-                    </p>
-              </div>
-              
-
+            <div class="lead">
+                <h1 class="h1">¿Quiénes somos?</h1>
+                <p class="">El Instituto Politécnico Industrial de Santiago (IPISA), es una institución educativa técnico profesional con uno de los más altos niveles de expansión y crecimiento en este tipo de modelo de educación, así como también, acorde a la vanguardia de los nuevos tiempos.</p>
+            </div>
         </div>
 
-
+        <hr>
 
         <div class="container marketing">
             <h1 class="h1">Nuestros talleres...</h1>
@@ -113,13 +120,17 @@
       
         </div>
       
-      
+        <hr>
+        <footer class="o-footer text-center">
+          <div class="inline">
+            <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
+            <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
+          </div>
+          <p class="float-end"><a href="#"><img src="multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
+          <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
       </main>
       <!-- FOOTER -->
-      <footer class="container o-footer">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

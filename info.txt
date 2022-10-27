@@ -1,8 +1,18 @@
 Quienes somos:
+El Instituto Politécnico Industrial de Santiago (IPISA), es una institución educativa técnico profesional 
+con uno de los más altos niveles de expansión y crecimiento en este tipo de modelo de educación, 
+así como también, acorde a la vanguardia de los nuevos tiempos.
 
+
+que es mfct?
+modulo de formacion de centros de trabajos, El módulo de Formación 
+en Centros de Trabajo (FCT) es uno de los módulos que integran el 
+currículo específico de la modalidad de Educación Técnica-Profesional.
+ Está incluido en el 6to grado del plan de estudio, donde el estudiante va a la empresa y demuestra
+ sus conocimientos aprendidos anteriormente.
 
 Talleres y perfil: 
-  Desarrollo y Administración de Aplicaciones Informáticas (DAAI)
+  Desarrollo y Administración de Aplicaciones Informáticas (DAAI) 
   Gestión Administrativa y Tributaria (GAT)
   Electrónica 
   Electricidad

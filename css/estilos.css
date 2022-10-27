@@ -1,0 +1,11 @@
+.o-navbar {
+    background-color: rgb(221, 157, 9);
+    color: white;
+}
+
+.o-container {
+    margin: 5% 0 5% 0;
+    padding: 4em;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+.o-navbar {
+    background-color: rgb(221, 133, 9);
+}
+
+.o-navbar img {
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+.o-navbar h2 {
+    font-family: 'Neuton', serif;
+    font-size: 40px !important;
+    text-decoration: none !important;
+
+    color: white !important;
+}
+
+.o-container {
+    margin: 5% 0 0 0;
+    padding: 4em;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid lightgray;
+}
+
+.row img {
+    margin-top: 2pc;
+}
+
+main {
+    background-color: white;
+    padding: 40px !important;
+}
+body {
+    background-color: rgb(214, 214, 239) !important;
+}
+.o-footer {
+    background-color: white;
+    text-decoration: none !important;
+    margin-top: 2pc;
+}
+.icon {
+    margin: 10px;
+}

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
 .o-navbar {
-    background-color: rgb(221, 133, 9);
+    background-color: rgb(221, 133, 9) !important;
+}
+
+nav #id {
+    font-family: 'Neuton', serif !important;
 }
 
 .o-navbar img {

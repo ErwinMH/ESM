@@ -17,18 +17,25 @@
 <body>
 
     <header>
-        <nav class="navbar o-navbar"> <!-- o-navbar clase para dar estilo al nav sin interferir con bootstrap -->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <img src="multimedia/cropped-ipisa.png" alt="Logo" width="50" height="50">
-                  <h2 class="list-inline-item">Instituto Politécnico Industrial de Santiago</h2> 
-                </a>
+        <nav class="navbar navbar-expand-lg bg-warning o-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="title" href="#">Instituto Politécnico Industrial de Santiago</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="pasantia.html">Pasantía</a>
+                <a class="nav-link" href="colaboradores.html">Colaboradores</a>
               </div>
-              
+            </div>
+          </div>
         </nav>
 
     </header>
-      
+    <br>
+    <img src="multimedia/cropped-ipisa.png" class="mx-auto d-block" alt="" width="300px">
       <main class="container o-container">
         <div class="container" id="who">
             <div class="lead">

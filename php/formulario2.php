@@ -147,8 +147,8 @@
         </form>
         <footer class="o-footer text-center">
           <div class="inline">
-            <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
-            <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
+            <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="../multimedia/facebook.png" alt="" width="50px"></a>
+            <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="../multimedia/instagram.png" alt="" width="50px"></a>
           </div>
           <p class="float-end"><a href="#"><img src="../multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
           <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>

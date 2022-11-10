@@ -76,13 +76,13 @@ require("conexion.php");
 
             <span>Tipo de contrato</span>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1">
+                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1" value="temp">
                 <label class="form-check-label" for="tipo_con1">
                     Temporal
                 </label>
                 </div>
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con2">
+                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con2" value="fijo">
                 <label class="form-check-label" for="tipo_con2">
                     Fijo
                 </label>
@@ -92,9 +92,9 @@ require("conexion.php");
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
                     <label for="hor">Horario</label>
-                    </div>
+                </div>
                 <div class="col-auto">
-                    <select name="" id="hor" class="form-select">
+                    <select name="hor" id="hor" class="form-select">
                         <option selected>Seleccione...</option>
                         <option value="">a</option>
                         <option value="">a</option>
@@ -116,13 +116,26 @@ require("conexion.php");
             <input type="tel" name="tel" id="tel" class="form-control" placeholder="XXX-XXX-XXXX">
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Button</button>
+                <input class="btn btn-primary" type="submit" value="Enviar">
             </div>
         </form>
 
 
         <?php
-        $nom_emp
+        if ($_SERVER['REQUEST_METHOD']=='POST') {
+            $nom_emp = $_REQUEST['nom_emp'];
+            $nom_pue = $_REQUEST['nom_pue'];
+            $func_pue = $_REQUEST['func_pue'];
+            $sueldo = $_REQUEST['sueldo'];
+            $ubic = $_REQUEST['ubic'];
+            $hor = $_REQUEST['hor'];
+            $tipo_con = $_REQUEST['tipo_con'];
+            $email = $_REQUEST['email'];
+            $cont = $_REQUEST['cont'];
+            $tel = $_REQUEST['tel'];
+
+        }
+
         ?>
     
         <footer class="o-footer text-center">

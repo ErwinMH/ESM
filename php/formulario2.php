@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="multimedia/cropped-ipisa.ico">
+    <link rel="icon" type="image/png" href="../multimedia/cropped-ipisa.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,14 +26,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav d-flex">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               <a class="nav-link" href="../pasantia.html">Pasantía</a>
               <a class="nav-link" href="../colaboradores.html">Colaboradores</a>
               <a class="nav-link" href="../familia.html">Familia</a>
-              <a class="nav-link" href="formulario1.php">Formulario 1</a>
-              <a class="nav-link" href="formulario2.php">Formulario 2</a>
-              <a class="nav-link" href="formulario3.php">Formulario 3</a>
+              <a class="nav-link float-end" href="formulario1.php">Formulario 1</a>
+              <a class="nav-link float-end" href="formulario2.php">Formulario 2</a>
+              <a class="nav-link float-end" href="formulario3.php">Formulario 3</a>
             </div>
           </div>
         </div>
@@ -47,101 +47,100 @@
         <form>
             
         <div class="form-group"> <!-- Full Name -->
-            <label for="full_name_id" class="control-label">NOMBRE DE LA EMPRESA</label>
-            <input type="text" class="form-control" id="full_empresa_id" name="NOMBRE" placeholder="NOMBRE">
+            <label for="full_name_id" class="control-label">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="full_empresa_id" name="nombre" placeholder="Nombre">
         </div>    
 
         <div class="form-group"> <!-- Street 1 -->
             <label for="street1_id" class="control-label">RNC</label>
             <input type="text" class="form-control" id="street1_id" name="street1" placeholder="0022541898">
-        </div>                    
+        </div>
+        <br>
         <label for="full_name_id" class="control-label">¿Desea que se conozca la identidad de su empresa?</label> <br>
 
-        si <input type="checkbox" name = "extras[]" value = "Sí" ><br>
-
-        no <input type="checkbox" name = "extras[]" value = "No" > <br>
+        <input type="radio" class="form-check-input" name="extras[]" value="si">
+        <label class="form-check-label" for="">Sí</label>
+        <br>
+        <input type="radio" class="form-check-input" name="extras[]" value="no"> 
+        <label class="form-check-label" for="">No</label>
+        <br><br>
 
         <label for="full_name_id" class="control-label">¿Dispone su empresa de un Departamento de Formación dentro de la empresa?</label> <br>
 
-        si <input type="checkbox" name = "extras[]" value = "Sí" ><br>
-
-        no <input type="checkbox" name = "extras[]" value = "No" >
+        <input type="radio" class="form-check-input" name="extras[]" value="si">
+        <label class="form-check-label" for="">Sí</label>
         <br>
+        <input type="radio" class="form-check-input" name="extras[]" value="no">
+        <label class="form-check-label" for="">No</label>
+        <br><br>
 
         <label for="full_name_id" class="control-label">Alcance de la empresa </label> <br>
 
-        Nacional <input type="checkbox" name = "extras[]" value = "nac" ><br>
+        <input type="radio" class="form-check-input" name="extras[]" value="nac" id="nac">
+        <label class="form-check-label" for="nac">Nacional</label>
+        <br>
+        <input type="radio" class="form-check-input" name="extras[]" value="loc" id="loc">
+        <label class="form-check-label" for="loc">Local</label>
 
-        Local <input type="checkbox" name = "extras[]" value = "loc" >
         <br>
         <br>
         <label for="full_name_id" class="control-label">Actividad económica a la que se dedica la empresa </label> <br>
-        <br>
-        <input type="textbox" name = "extras[]" value = "" ><br>
-        <br>
+        <input type="textbox" name = "extras[]" class="form-control" value=""><br>
 
         <div class="form-group"> 
-            <label for="state_id" class="control-label">Industria</label><br><br>
+            <label for="state_id" class="control-label">Industria</label><br>
 
             <select class="form-control" id="state_id">
                 <option value="AL">Industrial</option>
-                <option value="AK">servicio</option><br><br>
-                </select>
+                <option value="AK">servicio</option><br>
+            </select>
 
                 <br>
 
-                <div class="form-group"> 
-            <label for="state_id" class="control-label">Capacidad de la empresa</label><br><br>
+        <div class="form-group"> 
+            <label for="state_id" class="control-label">Capacidad de la empresa</label><br>
 
             <select class="form-control" id="state_id">
                 <option value="AL">Grande</option>
-                <option value="AK">Pequeña</option><br><br>
-                </select>
+                <option value="AK">Pequeña</option>
+            </select>
                 
                 <br>
-        <label for="full_name_id" class="control-label">Dirección </label> <br>
-        <br>
-        <input type="textbox" name = "extras[]" value = "" >
-
-        <br>
+        <label for="full_name_id" class="control-label">Dirección </label><br>
+        <input type="textbox" name="extras[]" value="" class="form-control"><br>
+        
         <label for="full_name_id" class="control-label">Sector </label> <br>
-        <br>
-        <input type="textbox" name = "extras[]" value = "" >
-
-        <br>
+        <input type="textbox" name="extras[]" value="" class="form-control"><br>
+        
         <label for="full_name_id" class="control-label">Sección</label> <br>
-        <br>
-        <input type="textbox" name = "extras[]" value = "" >
+        <input type="textbox" name="extras[]" value="" class="form-control"><br>
 
-        <br>
         <label for="full_name_id" class="control-label">Provincia</label> <br>
-        <br>
-        <input type="textbox" name = "extras[]" value = "" >
+        <input type="textbox" name="extras[]" value="" class="form-control">
 
         <br><br>
         <label for="state_id" class="control-label">País donde opera</label><br>
         <select class="form-control" id="state_id">
-                <option value="AL">República Dominicana</option>
-                
-                </select>
+            <option value="AL">República Dominicana</option>            
+        </select>
         <br>
-                <label for="full_name_id" class="control-label">Teléfono principal</label> 
+        <label for="full_name_id" class="control-label">Teléfono principal</label> 
         <br>
-        <input type="textbox" name = "extras[]" value = "" >       
+        <input type="textbox" name="extras[]" value="" class="form-control">       
 
         <br>
-                <label for="full_name_id" class="control-label">Teléfono directo</label> 
+        <label for="full_name_id" class="control-label">Teléfono directo</label> 
         <br>
-        <input type="textbox" name = "extras[]" value = "" >   
-
+        <input type="textbox" name="extras[]" value="" class="form-control">   
+        <br>
 
 
         <div class="form-group"> 
             <label for="zip_id" class="control-label">Correo electrónico</label>
             <input type="text" class="form-control" id="zip_id" name="zip" placeholder="correo">
         </div>        
-
-        <div class="form-group"> 
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto"> 
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>     
         </div>

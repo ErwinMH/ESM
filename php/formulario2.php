@@ -1,100 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="css/estilos.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--Aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depto. Vinculación Laboral - IPISA</title>
+    <link rel="icon" type="image/png" href="multimedia/cropped-ipisa.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
 </head>
 <body>
-<form>
+    <header> 
+        
+      <nav class="navbar navbar-expand-lg bg-warning o-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="title" href="#">Instituto Politécnico Industrial de Santiago</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="pasantia.html">Pasantía</a>
+              <a class="nav-link" href="colaboradores.html">Colaboradores</a>
+              <a class="nav-link" href="formulario2.php">frm</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <img src="multimedia/cropped-ipisa.png" class="mx-auto d-block" alt="" width="300px">
 
+    <main class="container o-container">
+        <div class="container" id="who">
+<form>
+    
+<h1>Informacion necesaria de la empresa</h1>
 <div class="form-group"> <!-- Full Name -->
-    <label for="full_name_id" class="control-label">Full Name</label>
-    <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+    <label for="full_name_id" class="control-label">NOMBRE DE LA EMPRESA</label>
+    <input type="text" class="form-control" id="full_empresa_id" name="NOMBRE" placeholder="NOMBRE">
 </div>    
 
 <div class="form-group"> <!-- Street 1 -->
-    <label for="street1_id" class="control-label">Street Address 1</label>
-    <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
+    <label for="street1_id" class="control-label">RNC</label>
+    <input type="text" class="form-control" id="street1_id" name="street1" placeholder="0022541898">
 </div>                    
-                        
-<div class="form-group"> <!-- Street 2 -->
-    <label for="street2_id" class="control-label">Street Address 2</label>
-    <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
-</div>    
+<label for="full_name_id" class="control-label">¿Desea que se conozca la identidad de su empresa?</label> <br>
 
-<div class="form-group"> <!-- City-->
-    <label for="city_id" class="control-label">City</label>
-    <input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
-</div>                                    
-                        
-<div class="form-group"> <!-- State Button -->
-    <label for="state_id" class="control-label">State</label>
+ si <input type="checkbox" name = "extras[]" value = "si" ><br>
+
+ no <input type="checkbox" name = "extras[]" value = "no" > <br>
+
+ <label for="full_name_id" class="control-label">¿Dispone su empresa de un Departamento de Formación dentro de la empresa?</label> <br>
+
+ si <input type="checkbox" name = "extras[]" value = "si" ><br>
+
+ no <input type="checkbox" name = "extras[]" value = "no" >
+ <br>
+
+ <label for="full_name_id" class="control-label">Alcance de la empresa </label> <br>
+
+ Naconal <input type="checkbox" name = "extras[]" value = "nac" ><br>
+
+ Local <input type="checkbox" name = "extras[]" value = "loc" >
+<br>
+<br>
+ <label for="full_name_id" class="control-label">Actividad económica a la que se dedica la empresa </label> <br>
+ <br>
+ <input type="textbox" name = "extras[]" value = "" ><br>
+<br>
+
+ <div class="form-group"> 
+    <label for="state_id" class="control-label">Industria</label><br><br>
+
     <select class="form-control" id="state_id">
-        <option value="AL">Alabama</option>
-        <option value="AK">Alaska</option>
-        <option value="AZ">Arizona</option>
-        <option value="AR">Arkansas</option>
-        <option value="CA">California</option>
-        <option value="CO">Colorado</option>
-        <option value="CT">Connecticut</option>
-        <option value="DE">Delaware</option>
-        <option value="DC">District Of Columbia</option>
-        <option value="FL">Florida</option>
-        <option value="GA">Georgia</option>
-        <option value="HI">Hawaii</option>
-        <option value="ID">Idaho</option>
-        <option value="IL">Illinois</option>
-        <option value="IN">Indiana</option>
-        <option value="IA">Iowa</option>
-        <option value="KS">Kansas</option>
-        <option value="KY">Kentucky</option>
-        <option value="LA">Louisiana</option>
-        <option value="ME">Maine</option>
-        <option value="MD">Maryland</option>
-        <option value="MA">Massachusetts</option>
-        <option value="MI">Michigan</option>
-        <option value="MN">Minnesota</option>
-        <option value="MS">Mississippi</option>
-        <option value="MO">Missouri</option>
-        <option value="MT">Montana</option>
-        <option value="NE">Nebraska</option>
-        <option value="NV">Nevada</option>
-        <option value="NH">New Hampshire</option>
-        <option value="NJ">New Jersey</option>
-        <option value="NM">New Mexico</option>
-        <option value="NY">New York</option>
-        <option value="NC">North Carolina</option>
-        <option value="ND">North Dakota</option>
-        <option value="OH">Ohio</option>
-        <option value="OK">Oklahoma</option>
-        <option value="OR">Oregon</option>
-        <option value="PA">Pennsylvania</option>
-        <option value="RI">Rhode Island</option>
-        <option value="SC">South Carolina</option>
-        <option value="SD">South Dakota</option>
-        <option value="TN">Tennessee</option>
-        <option value="TX">Texas</option>
-        <option value="UT">Utah</option>
-        <option value="VT">Vermont</option>
-        <option value="VA">Virginia</option>
-        <option value="WA">Washington</option>
-        <option value="WV">West Virginia</option>
-        <option value="WI">Wisconsin</option>
-        <option value="WY">Wyoming</option>
-    </select>                    
-</div>
+        <option value="AL">Industrial</option>
+        <option value="AK">servicio</option><br><br>
+        </select>
 
-<div class="form-group"> <!-- Zip Code-->
-    <label for="zip_id" class="control-label">Zip Code</label>
-    <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+        <br>
+
+        <div class="form-group"> 
+    <label for="state_id" class="control-label">Capacidad de la empresa</label><br><br>
+
+    <select class="form-control" id="state_id">
+        <option value="AL">grande</option>
+        <option value="AK">pequena</option><br><br>
+        </select>
+        
+        <br>
+ <label for="full_name_id" class="control-label">Direccion </label> <br>
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >
+
+ <br>
+ <label for="full_name_id" class="control-label">sector </label> <br>
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >
+
+ <br>
+ <label for="full_name_id" class="control-label">seccion</label> <br>
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >
+
+ <br>
+ <label for="full_name_id" class="control-label">provincia</label> <br>
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >
+
+ <br><br>
+ <label for="state_id" class="control-label">pais donde opera</label><br>
+ <select class="form-control" id="state_id">
+        <option value="AL">Republica dominicana</option>
+        
+        </select>
+<br>
+        <label for="full_name_id" class="control-label">telefono principal</label> 
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >       
+
+ <br>
+        <label for="full_name_id" class="control-label">telefono directo</label> 
+ <br>
+ <input type="textbox" name = "extras[]" value = "" >   
+
+
+
+<div class="form-group"> 
+    <label for="zip_id" class="control-label">Correo electronico</label>
+    <input type="text" class="form-control" id="zip_id" name="zip" placeholder="correo">
 </div>        
 
-<div class="form-group"> <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary">Buy!</button>
+<div class="form-group"> 
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </div>     
-
+</div>
 </form>
+<footer class="o-footer text-center">
+          <div class="inline">
+            <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
+            <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
+          </div>
+          <p class="float-end"><a href="#"><img src="multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
+          <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+</main>
+      <!-- FOOTER -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-include("conexion.php");
+require("conexion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,6 +119,11 @@ include("conexion.php");
                 <button class="btn btn-primary" type="button">Button</button>
             </div>
         </form>
+
+
+        <?php
+        $nom_emp
+        ?>
     
         <footer class="o-footer text-center">
             <div class="inline">

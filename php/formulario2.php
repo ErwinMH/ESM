@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <link rel="stylesheet" href="../css/estilos.css">
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--Aos-->
@@ -11,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../multimedia/cropped-ipisa.ico">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +29,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
             <div class="navbar-nav d-flex">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               <a class="nav-link" href="../pasantia.html">Pasantía</a>
@@ -34,6 +38,7 @@
               <a class="nav-link float-end" href="formulario1.php">Formulario 1</a>
               <a class="nav-link float-end" href="formulario2.php">Formulario 2</a>
               <a class="nav-link float-end" href="formulario3.php">Formulario 3</a>
+
             </div>
           </div>
         </div>
@@ -43,6 +48,7 @@
 
     <main class="container o-container">
         <div class="container" id="who">
+
             <h1>Información necesaria de la empresa</h1>
         <form>
             
@@ -150,6 +156,7 @@
             <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
             <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
           </div>
+
           <p class="float-end"><a href="#"><img src="../multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
           <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
         </footer>

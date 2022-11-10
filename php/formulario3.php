@@ -1,5 +1,5 @@
 <?php 
-include("conexion.php");
+require("conexion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,24 +83,24 @@ include("conexion.php");
                     <label for="sueldo" class="col-form-label">Sueldo</label>
                 </div>
                 <div class="col-auto">
-                    <input type="number" name="sueldo" id="sueldo" class="form-control">
+                    <input type="number" name="sueldo" id="sueldo" class="form-control" placeholder="0000.00">
                 </div>
             </div>
             <br><br>
    
             <label for="ubic">Ubicación</label>
-            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="7">
+            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="31000, Santiago, XXXX">
             <br>
 
             <span>Tipo de contrato</span>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1">
+                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1" value="temp">
                 <label class="form-check-label" for="tipo_con1">
                     Temporal
                 </label>
                 </div>
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con2">
+                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con2" value="fijo">
                 <label class="form-check-label" for="tipo_con2">
                     Fijo
                 </label>
@@ -110,9 +110,9 @@ include("conexion.php");
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
                     <label for="hor">Horario</label>
-                    </div>
+                </div>
                 <div class="col-auto">
-                    <select name="" id="hor" class="form-select">
+                    <select name="hor" id="hor" class="form-select">
                         <option selected>Seleccione...</option>
                         <option value="">a</option>
                         <option value="">a</option>
@@ -123,7 +123,7 @@ include("conexion.php");
             
             <br>
             <label for="email">Correo a enviar los currículum</label>
-            <input type="email" name="email" id="email" class="form-control">
+            <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@gmail.com">
             <br>
 
             <label for="cont">Persona de contacto</label>
@@ -131,17 +131,35 @@ include("conexion.php");
             <br>
 
             <label for="tel">Teléfono</label>
-            <input type="tel" name="tel" id="tel" class="form-control">
+            <input type="tel" name="tel" id="tel" class="form-control" placeholder="XXX-XXX-XXXX">
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Button</button>
+                <input class="btn btn-primary" type="submit" value="Enviar">
             </div>
         </form>
+
+
+        <?php
+        if ($_SERVER['REQUEST_METHOD']=='POST') {
+            $nom_emp = $_REQUEST['nom_emp'];
+            $nom_pue = $_REQUEST['nom_pue'];
+            $func_pue = $_REQUEST['func_pue'];
+            $sueldo = $_REQUEST['sueldo'];
+            $ubic = $_REQUEST['ubic'];
+            $hor = $_REQUEST['hor'];
+            $tipo_con = $_REQUEST['tipo_con'];
+            $email = $_REQUEST['email'];
+            $cont = $_REQUEST['cont'];
+            $tel = $_REQUEST['tel'];
+
+        }
+
+        ?>
     
         <footer class="o-footer text-center">
             <div class="inline">
-                <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
-                <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
+                <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="../multimedia/facebook.png" alt="" width="50px"></a>
+                <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="../multimedia/instagram.png" alt="" width="50px"></a>
             </div>
             <p class="float-end"><a href="#"><img src="../multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
             <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>

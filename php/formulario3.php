@@ -65,13 +65,13 @@ include("conexion.php");
                     <label for="sueldo" class="col-form-label">Sueldo</label>
                 </div>
                 <div class="col-auto">
-                    <input type="number" name="sueldo" id="sueldo" class="form-control">
+                    <input type="number" name="sueldo" id="sueldo" class="form-control" placeholder="0000.00">
                 </div>
             </div>
             <br><br>
    
             <label for="ubic">Ubicación</label>
-            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="7">
+            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="31000, Santiago, XXXX">
             <br>
 
             <span>Tipo de contrato</span>
@@ -105,7 +105,7 @@ include("conexion.php");
             
             <br>
             <label for="email">Correo a enviar los currículum</label>
-            <input type="email" name="email" id="email" class="form-control">
+            <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@gmail.com">
             <br>
 
             <label for="cont">Persona de contacto</label>
@@ -113,7 +113,7 @@ include("conexion.php");
             <br>
 
             <label for="tel">Teléfono</label>
-            <input type="tel" name="tel" id="tel" class="form-control">
+            <input type="tel" name="tel" id="tel" class="form-control" placeholder="XXX-XXX-XXXX">
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="button">Button</button>
@@ -122,8 +122,8 @@ include("conexion.php");
     
         <footer class="o-footer text-center">
             <div class="inline">
-                <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="multimedia/facebook.png" alt="" width="50px"></a>
-                <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="multimedia/instagram.png" alt="" width="50px"></a>
+                <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="../multimedia/facebook.png" alt="" width="50px"></a>
+                <a href="https://instagram.com/ipisasdb" class="icon" target="_blank"><img src="../multimedia/instagram.png" alt="" width="50px"></a>
             </div>
             <p class="float-end"><a href="#"><img src="../multimedia/up-arrow.png" alt="" width="30px" height="30px"></a></p>
             <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>

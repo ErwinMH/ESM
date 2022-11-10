@@ -21,28 +21,45 @@
 </head>
 <body>
     <header> 
+    
+    <nav class="navbar navbar-expand-lg bg-warning">
+         <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Instituto Politécnico industrial de Santiago</a>
+               <nav class="navbar bg-light">
+</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pasantia.html">Pasantia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../colaboradores.html">Colaboradores</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Saber más 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../familia.html">Familia</a></li>
+            <li><a class="dropdown-item" href="formulario3.php">Formulario de vacantes</a></li>
+            <li><a class="dropdown-item" href="formulario2.php">Formulario de empresas</a></li>
+            <li><a class="dropdown-item" href="formulario1.php">Formulario de Estudiantes</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
         
-      <nav class="navbar navbar-expand-lg bg-warning o-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" id="title" href="#">Instituto Politécnico Industrial de Santiago</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-            <div class="navbar-nav d-flex">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              <a class="nav-link" href="../pasantia.html">Pasantía</a>
-              <a class="nav-link" href="../colaboradores.html">Colaboradores</a>
-              <a class="nav-link" href="../familia.html">Familia</a>
-              <a class="nav-link float-end" href="formulario1.php">Formulario 1</a>
-              <a class="nav-link float-end" href="formulario2.php">Formulario 2</a>
-              <a class="nav-link float-end" href="formulario3.php">Formulario 3</a>
-
-            </div>
-          </div>
-        </div>
-      </nav>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    
     </header>
     <img src="multimedia/cropped-ipisa.png" class="mx-auto d-block" alt="" width="300px">
 
@@ -141,10 +158,7 @@
         <br>
 
 
-        <div class="form-group"> 
-            <label for="zip_id" class="control-label">Correo electrónico</label>
-            <input type="text" class="form-control" id="zip_id" name="zip" placeholder="correo">
-        </div>        
+       
         <br>
         <div class="d-grid gap-2 col-6 mx-auto"> 
             <button type="submit" class="btn btn-primary">Enviar</button>

@@ -1,1 +1,2 @@
-php/conexion.php
+#Para ignorar cambios en la contraseña en conexion.php
+    php/conexion.php

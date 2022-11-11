@@ -69,12 +69,12 @@
             <h1>Información necesaria de la empresa</h1>
         <form>
             
-        <div class="form-group"> <!-- Full Name -->
+        <div class="form-group"> 
             <label for="full_name_id" class="control-label">Nombre de la empresa</label>
             <input type="text" class="form-control" id="full_empresa_id" name="nombre" placeholder="Nombre">
         </div>    
 
-        <div class="form-group"> <!-- Street 1 -->
+        <div class="form-group"> <
             <label for="street1_id" class="control-label">RNC</label>
             <input type="text" class="form-control" id="street1_id" name="street1" placeholder="0022541898">
         </div>

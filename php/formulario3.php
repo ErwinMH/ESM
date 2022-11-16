@@ -48,10 +48,9 @@ require("conexion.php");
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../familia.html">Familia</a></li>
-            <li><a class="dropdown-item" href="formulario3.php">Formulario de vacantes</a></li>
-            <li><a class="dropdown-item" href="formulario2.php">Formulario de empresas</a></li>
-            <li><a class="dropdown-item" href="formulario1.php">Formulario de Estudiantes</a></li>
             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../Redirectfrm.html">Índice de formularios</a></li>
+
           </ul>
         </li>
         

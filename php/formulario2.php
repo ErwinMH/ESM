@@ -74,7 +74,7 @@
             <input type="text" class="form-control" id="full_empresa_id" name="nombre" placeholder="Nombre">
         </div>    
 
-        <div class="form-group"> <
+        <div class="form-group">
             <label for="street1_id" class="control-label">RNC</label>
             <input type="text" class="form-control" id="street1_id" name="street1" placeholder="0022541898">
         </div>

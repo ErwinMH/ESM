@@ -109,7 +109,7 @@
           <br>
           <br>
           <label for="act_eco" class="control-label">Actividad económica a la que se dedica la empresa </label> <br>
-          <input type="textbox" name="act_eco" class="form-control" id="act_eco" required><br>
+          <textarea type="textarea" name="act_eco" class="form-control" id="act_eco" required></textarea><br>
 
           <div class="form-group"> 
               <label for="state_id" class="control-label">Industria</label><br>
@@ -151,13 +151,23 @@
               <option value="RD">República Dominicana</option>            
           </select>
           <br>
-          <label for="email" class="control-label">correo</label> 
+          <label for="email" class="control-label">Correo</label> 
           <br>
           <input type="email" name="email" class="form-control" id="email" required>       
           <br>
-          <label for="clave" class="control-label">clave</label> 
+          <label for="clave" class="control-label">Clave</label> 
           <br>
-          <input type="password" name="clave" class="form-control" id="clave" required>       
+          <input type="password" name="clave" class="form-control" id="clave" required>
+          <br>      
+
+          <label for="ver_email" class="control-label">Confirmación de correo</label> 
+          <br>
+          <input type="email" name="ver_email" class="form-control" id="ver_email" required>       
+          <br>
+          <label for="ver_clave" class="control-label">Confirmación de clave</label> 
+          <br>
+          <input type="password" name="ver_clave" class="form-control" id="ver_clave" required>
+          <br>
 
           <br>
           <br>
@@ -217,17 +227,24 @@ require("conexion.php");
         $clave = $_POST['clave'];
         $tel_ext = $_POST['tel_ext'];
 
-        $insert = "INSERT INTO datos_form2 VALUES ('$nom_empr','$rnc',' $id_em','$dept','$alcance','$acti','$indu','$tama','$direc','$sector','$secc','$municipo','$provincia','$pais','$telpri','$telsec','$mail','$clave','$contacto','$tel_ext')";
+        $ver_clave = $_POST['ver_clave'];
+        $ver_correo = $_POST['ver_email'];
 
-        // mysqli_query($conn_practicaphp, $insert);
-
-        if ($result = mysqli_query($conn_practicaphp, $insert)) {
-          echo "inserted succesfully";
+        if ($clave == $ver_clave && $mail == $ver_correo) {
+          $insert = "INSERT INTO datos_form2 VALUES ('$nom_empr','$rnc',' $id_em','$dept','$alcance','$acti','$indu','$tama','$direc','$sector','$secc','$municipo','$provincia','$pais','$telpri','$telsec','$mail','$clave','$contacto','$tel_ext')";
+        
+          // mysqli_query($conn_practicaphp, $insert);
+        
+          if ($result = mysqli_query($conn_practicaphp, $insert)) {
+            echo "inserted succesfully";
+          } else {
+            echo "Error";
+          }
+          $conn_practicaphp->close();
         } else {
-          echo "Error";
+          echo "Los datos de la contraseña o correo no coinciden";
         }
 
-      $conn_practicaphp->close();
   }
 
         

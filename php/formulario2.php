@@ -1,3 +1,20 @@
+<?php 
+include_once("conexion.php");
+    if ($_SERVER['REQUEST_METHOD']=='POST') {
+        $nom = $_POST['nom'];
+        $ape = $_POST['ape'];
+        $tel = $_POST['tel'];
+
+        $insert = "INSERT INTO cliente VALUES (0,'$nom','$ape','$tel')";
+
+        mysqli_query($conn, $insert);
+
+        header("location: index.php?insert=success");
+
+        $conn->close();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

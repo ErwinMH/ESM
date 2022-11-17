@@ -1,5 +1,5 @@
 <?php
-    include_once("conexion.php");
+    include_once("../conexion.php");
     
         $id = $_REQUEST['id'];
 
@@ -7,7 +7,7 @@
         //echo $delete;
         mysqli_query($conn_practicaphp, $delete);
         
-        header("location: adm-form3.php?insert=success");
+        header("location: ../adm-form3.php?delete=success");
 
         $conn->close();
     

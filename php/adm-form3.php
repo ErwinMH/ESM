@@ -119,6 +119,7 @@ require("conexion.php");
                                 <td>". $row['persona_contacto'] ."</td>
                                 <td>". $row['telefono']    ."</td>
                                 <td><a href='delete.php?id=$row[id]'>Borrar</td>
+                                <td><a href='./frm3/update.php?id=$row[id]'>Editar</td>
                             </tr>";
                         } 
                     }
@@ -166,7 +167,8 @@ require("conexion.php");
                                 <td>". $row['correo']  ."</td>
                                 <td>". $row['persona_contacto'] ."</td>
                                 <td>". $row['telefono']    ."</td>
-                                <td><a href='delete.php?id=$row[id]'>Borrar</td>
+                                <td><a href='./frm3/delete.php?id=$row[id]'>Borrar</td>
+                                <td><a href='./frm3/update.php?id=$row[id]'>Editar</td>
                             </tr>";
                         }
                     }

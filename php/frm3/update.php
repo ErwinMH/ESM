@@ -2,9 +2,9 @@
     include_once("../conexion.php");
     
     if ($_SERVER['REQUEST_METHOD']=='GET') {
-            $cod = $_REQUEST['id'];
+            $id = $_REQUEST['id'];
     
-            $select = "SELECT * FROM datos_form3 WHERE id=$cod";
+            $select = "SELECT * FROM datos_form3 WHERE id=$id";
     
             $result = mysqli_query($conn_practicaphp, $select);
             $resultCheck = mysqli_num_rows($result);
@@ -75,9 +75,9 @@
     <main class="container o-container">
     <div class="container-md" id="who">
         <h1>Información de vacante</h1>
-        <form method="get" action="">
+        <form method="get" action="edit.php">
             <label for="id">ID</label>
-            <input type="number" id="id" name="cod" value="<?php echo $id;?>" class="form-control" disabled>
+            <input type="text" id="id" name="id" value="7" class="form-control" readonly>
 
             <label for="nom_emp">Nombre de la empresa</label>
             <input type="text" name="nom_emp" id="nom_emp" class="form-control" value="<?php echo $row['nombre_empresa'];?>">
@@ -107,7 +107,7 @@
 
             <span>Tipo de contrato</span><br>
 
-            <?php echo "Seleccionado: ". $row['tipo_contrato'];?>
+            <p><i>Asegurese de elegir una opción</i></p>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1" value="temp">
                 <label class="form-check-label" for="tipo_con1">
@@ -146,7 +146,7 @@
             <input type="tel" name="tel" id="tel" class="form-control" placeholder="XXX-XXX-XXXX" value="<?php echo $row['telefono'];?>">
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="./frm3/edit.php?cod=$row[id]"><input class="btn btn-primary" type="submit" value="Editar"></a>
+                <input class="btn btn-primary" type="submit" value="Editar"></a>
             </div>
         </form>
 

@@ -1,7 +1,7 @@
 <?php
 include_once("../conexion.php");
-if ($_SERVER['REQUEST_METHOD']=='GET') {
-    $cod = $_REQUEST['cod'];
+
+    $cod = $_REQUEST['id'];
     $nom_emp = $_REQUEST['nom_emp'];
     $nom_pue = $_REQUEST['nom_pue'];
     $func_pue = $_REQUEST['func_pue'];
@@ -20,5 +20,5 @@ if ($_SERVER['REQUEST_METHOD']=='GET') {
     header("../adm-form3.php?update=success");
 
     $conn_practicaphp->close();
-}
+
 ?>

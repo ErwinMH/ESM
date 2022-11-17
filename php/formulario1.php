@@ -107,7 +107,7 @@ require("conexion.php");
             <label for="nom_inst">Institucion educativa a la que pertenece</label>
             <select name="institucion" id="institucion">
               <option value="IPISA">IPISA</option>
-              <option value="Otra">Otra</option>
+              <option value="Otra">IPIDBOSCO</option>
             </select> 
             </br></br>
 
@@ -157,14 +157,6 @@ require("conexion.php");
             </select><br>
             <br>
 
-            <label for="direc">Dirección</label>
-            <input type="text" name="direc" id="direc" class="form-control">
-            <br>
-
-            <label for="sector">Sector</label>
-            <input type="text" name="sector" id="sector" class="form-control">
-            <br>
-
             <label for="seccion">Sección</label>
             <input type="text" name="seccion" id="sector" class="form-control">
             <br>
@@ -185,7 +177,7 @@ require("conexion.php");
             <input type="text" name="tel_res" id="tel_res" class="form-control">
             <br>
 
-            <label for="tel_mov">Teléfono residencial</label>
+            <label for="tel_mov">Teléfono móvil</label>
             <input type="text" name="tel_mov" id="tel_mov" class="form-control">
             <br>
             
@@ -197,14 +189,30 @@ require("conexion.php");
             <input type="checkbox" name="veh" id="veh" value="Sí">Sí
             </br></br>
 
-            <label for="cv">Adjunte su CV</label></br></br>
-            <input type="file" name="cv" id="cv">
-            </br></br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="form-control">
+            <br>
+            
+            <label for="contrasena">Contrasena</label>
+            <input type="password" name="contrasena" id="contrasena" class="form-control">
+            <br>
 
             <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="button">Listo!</button>
             </div>
         </form>
+
+        <?php
+
+        require("conexion.php");
+        
+        if ($_SERVER['REQUEST_METHOD']=='POST') {
+          $nom_empr = $_POST['nom_empr'];
+
+        }
+
+        ?>
+
         <footer class="o-footer text-center">
           <div class="inline">
             <a href="https://www.facebook.com/ipi.salesianos" class="icon" target="_blank"><img src="../multimedia/facebook.png" alt="" width="50px"></a>

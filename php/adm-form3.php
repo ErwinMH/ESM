@@ -71,35 +71,63 @@ require("conexion.php");
             <div class="col-sm-3 row">
                 <div class="input-group mb-3 col-sm-3">
                     <input type="number" class="form-control" placeholder="Digite ID a buscar" name="filtro">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-outline-success" type="submit" name="f1">Buscar</button>
+                    
+                    </div>
                 </div>
-            </div>
-            <br>
+                <br>
         </form>
-
-    <?php
-      if ($_SERVER['REQUEST_METHOD']=='POST') {
-        $filtro = $_POST['filtro'];
-
-        $select = "SELECT * FROM datos_form3 WHERE id=$filtro";
-
         
-        // if ($resultCheck > 0) {
-        //     while ($row=mysqli_fetch_assoc($result)) {
-        //         echo 
-        //         "<tr>
-        //             <td>". $row['idcliente'] ."</td>
-        //             <td>". $row['nombre']    ."</td>
-        //             <td>". $row['apellido']  ."</td>
-        //             <td>". $row['telefono']  ."</td>
-        //         </tr>";
-        //     } 
-        // }
-    }
-    ?>
+        <?php 
+                    if ($_SERVER['REQUEST_METHOD']=='POST') {
+                    $filtro = $_REQUEST['filtro'];
+
+                    $select = "SELECT * FROM datos_form3 WHERE id=$filtro";
+
+                    $result = mysqli_query($conn_practicaphp, $select);
+                    $resultCheck = mysqli_num_rows($result);
+                    if ($resultCheck > 0) {
+                        while ($row=mysqli_fetch_assoc($result)) {
+                            echo "<h3>Resultado: </h3>";
+                            echo "<table class='table table-borderless'>
+                            <thead>
+                                <tr>
+                                    <th scope='col'>ID</th>
+                                    <th scope='col'>Nombre empresa</th>
+                                    <th scope='col'>Nombre puesto</th>
+                                    <th scope='col'>Perfil puesto</th>
+                                    <th scope='col'>Sueldo</th>
+                                    <th scope='col'>Ubicación</th>
+                                    <th scope='col'>Tipo contrato</th>
+                                    <th scope='col'>Horario</th>
+                                    <th scope='col'>Correo</th>
+                                    <th scope='col'>Persona contacto</th>
+                                    <th scope='col'>Teléfono</th>
+                                </tr>
+                            </thead>
+                            
+                            <tr>
+                                <td>". $row['id'] ."</td>
+                                <td>". $row['nombre_empresa'] ."</td>
+                                <td>". $row['nombre_puesto']    ."</td>
+                                <td>". $row['perfil_puesto']  ."</td>
+                                <td>". $row['sueldo']  ."</td>
+                                <td>". $row['ubicacion'] ."</td>
+                                <td>". $row['tipo_contrato']    ."</td>
+                                <td>". $row['horario']  ."</td>
+                                <td>". $row['correo']  ."</td>
+                                <td>". $row['persona_contacto'] ."</td>
+                                <td>". $row['telefono']    ."</td>
+                                <td><a href='delete.php?id=$row[id]'>Borrar</td>
+                            </tr>";
+                        } 
+                    }
+                    }
+                    ?>
+                    
 
 
-        <form>
+        <form method="get">
         <div class="table-responsive ">
             <table class="table table-borderless">
             <thead>
@@ -117,16 +145,6 @@ require("conexion.php");
                     <th scope="col">Teléfono</th>
                 </tr>
             </thead>
-            <?php 
-            if ($_SERVER['REQUEST_METHOD']=='POST') {
-                if (isset($filtro)){
-                    $result = mysqli_query($conn_practicaphp, $select);
-                    $resultCheck = mysqli_num_rows($result);
-            ?>
-
-            <?php
-                } else {
-            ?>
                 <tbody>
                 <?php
                     $select = "SELECT * FROM datos_form3";
@@ -154,7 +172,7 @@ require("conexion.php");
                     }
                 ?>
                 </tbody>
-                <?php }}?>
+
             </table>
         </div>
 

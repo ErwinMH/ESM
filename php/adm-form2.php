@@ -119,24 +119,25 @@ require("conexion.php");
                             <td>". $row['id'] ."</td>
                             <td>". $row['nombre_empresa'] ."</td>
                             <td>". $row['RNC']    ."</td>
-                            <td>". $row['Identidad empresa']  ."</td>
-                            <td>". $row['Departamento Formacion']  ."</td>
-                            <td>". $row['Alcance empresa'] ."</td>
-                            <td>". $row['Actividad economica']    ."</td>
-                            <td>". $row['Industrtia']  ."</td>
-                            <td>". $row['Tamaño empresa']  ."</td>
-                            <td>". $row['Direccion'] ."</td>
-                            <td>". $row['Sector']    ."</td>
-                            <td>". $row['Seccion']    ."</td>
-                            <td>". $row['Municipio']    ."</td>
-                            <td>". $row['Provincia']    ."</td>
-                            <td>". $row['Pais donde opera']    ."</td>
-                            <td>". $row['Telefono principal']    ."</td>
-                            <td>". $row['Telefono directo']    ."</td>
-                            <td>". $row['Email']    ."</td>
-                            <td>". $row['Contraseña']    ."</td>
-                            <td>". $row['Contacto empresa']    ."</td>
-                                <td><a href='delete.php?id=$row[id]'>Borrar</td>
+                            <td>". $row['identidad_empresa']  ."</td>
+                            <td>". $row['departamento_formacion']  ."</td>
+                            <td>". $row['alcance_empresa'] ."</td>
+                            <td>". $row['actividad_economica']    ."</td>
+                            <td>". $row['industrtia']  ."</td>
+                            <td>". $row['tamaño_empresa']  ."</td>
+                            <td>". $row['direccion'] ."</td>
+                            <td>". $row['sector']    ."</td>
+                            <td>". $row['seccion']    ."</td>
+                            <td>". $row['municipio']    ."</td>
+                            <td>". $row['provincia']    ."</td>
+                            <td>". $row['pais_operacion']    ."</td>
+                            <td>". $row['telefono_pri']    ."</td>
+                            <td>". $row['telefono_di']    ."</td>
+                            <td>". $row['email']    ."</td>
+                            <td>". $row['contraseña']    ."</td>
+                            <td>". $row['contacto_empresa']    ."</td>
+                            <td>". $row['tel_ext']    ."</td>
+                                <td><a href='./frm2/delete.php?id=$row[id]'>Borrar</td>
                                 <td><a href='./frm2/update.php?id=$row[id]'>Editar</td>
                             </tr>";
                         } 
@@ -189,23 +190,24 @@ require("conexion.php");
                                 <td>". $row['id'] ."</td>
                                 <td>". $row['nombre_empresa'] ."</td>
                                 <td>". $row['RNC']    ."</td>
-                                <td>". $row['Identidad empresa']  ."</td>
-                                <td>". $row['Departamento Formacion']  ."</td>
-                                <td>". $row['Alcance empresa'] ."</td>
-                                <td>". $row['Actividad economica']    ."</td>
-                                <td>". $row['Industrtia']  ."</td>
-                                <td>". $row['Tamaño empresa']  ."</td>
-                                <td>". $row['Direccion'] ."</td>
-                                <td>". $row['Sector']    ."</td>
-                                <td>". $row['Seccion']    ."</td>
-                                <td>". $row['Municipio']    ."</td>
-                                <td>". $row['Provincia']    ."</td>
-                                <td>". $row['Pais donde opera']    ."</td>
-                                <td>". $row['Telefono principal']    ."</td>
-                                <td>". $row['Telefono directo']    ."</td>
-                                <td>". $row['Email']    ."</td>
-                                <td>". $row['Contraseña']    ."</td>
-                                <td>". $row['Contacto empresa']    ."</td>
+                                <td>". $row['identidad_empresa']  ."</td>
+                                <td>". $row['departamento_formacion']  ."</td>
+                                <td>". $row['alcance_empresa'] ."</td>
+                                <td>". $row['actividad_economica']    ."</td>
+                                <td>". $row['industrtia']  ."</td>
+                                <td>". $row['tamaño_empresa']  ."</td>
+                                <td>". $row['direccion'] ."</td>
+                                <td>". $row['sector']    ."</td>
+                                <td>". $row['seccion']    ."</td>
+                                <td>". $row['municipio']    ."</td>
+                                <td>". $row['provincia']    ."</td>
+                                <td>". $row['pais_operacion']    ."</td>
+                                <td>". $row['telefono_pri']    ."</td>
+                                <td>". $row['telefono_di']    ."</td>
+                                <td>". $row['email']    ."</td>
+                                <td>". $row['contraseña']    ."</td>
+                                <td>". $row['contacto_empresa']    ."</td>
+                                <td>". $row['tel_ext']    ."</td>
                                 <td><a href='./frm2/delete.php?id=$row[id]'>Borrar</td>
                                 <td><a href='./frm2/update.php?id=$row[id]'>Editar</td>
                             </tr>";

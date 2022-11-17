@@ -1,11 +1,27 @@
 <?php 
 include_once("conexion.php");
     if ($_SERVER['REQUEST_METHOD']=='POST') {
-        $nom = $_POST['nom'];
-        $ape = $_POST['ape'];
-        $tel = $_POST['tel'];
+        $nom_empr = $_POST['nom_empr'];
+        $rnc = $_POST['rnc'];
+        $id_em = $_POST['id_em'];
+        $dept = $_POST['dept'];
+        $alcance = $_POST['alcance'];
+        $acti = $_POST['acti'];
+        $indu = $_POST['indu'];
+        $tama = $_POST['tama'];
+        $direc = $_POST['direc'];
+        $sector = $_POST['sector'];
+        $secc = $_POST['seccion'];
+        $municipo = $_POST['municipio'];
+        $pais = $_POST['pais'];
+        $telpri = $_POST['telpri'];
+        $telsec = $_POST['telsec'];
+        $mail = $_POST['mail'];
+        $clave = $_POST['clave'];
+        $contacto = $_POST['contacto'];
 
-        $insert = "INSERT INTO cliente VALUES (0,'$nom','$ape','$tel')";
+        $insert = "INSERT INTO datos_frm2 VALUES (0,'$nom_empr','$rnc',' $id_em','$dept','$alcance',
+        '$acti','$indu','$tama','$direc','$sector','$secc','$municipo','$pais','$telpri','$telsec','$mail','$clave','$contacto')";
 
         mysqli_query($conn, $insert);
 
@@ -162,6 +178,17 @@ include_once("conexion.php");
             <option value="AL">República Dominicana</option>            
         </select>
         <br>
+        <label for="full_name_id" class="control-label">correo</label> 
+        <br>
+        <input type="textbox" name="extras[]" value="" class="form-control">       
+        <br>
+        <label for="full_name_id" class="control-label">clave</label> 
+        <br>
+        <input type="textbox" name="extras[]" value="" class="form-control">       
+
+        <br>
+        <br>
+        <br>
         <label for="full_name_id" class="control-label">Teléfono principal</label> 
         <br>
         <input type="textbox" name="extras[]" value="" class="form-control">       
@@ -170,6 +197,12 @@ include_once("conexion.php");
         <label for="full_name_id" class="control-label">Teléfono directo</label> 
         <br>
         <input type="textbox" name="extras[]" value="" class="form-control">   
+        <br>
+        <br>
+        <label for="full_name_id" class="control-label">contacto empresa</label> 
+        <br>
+        <input type="textbox" name="extras[]" value="" class="form-control">       
+
         <br>
 
 

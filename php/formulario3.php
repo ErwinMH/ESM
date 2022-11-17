@@ -151,7 +151,7 @@ require("conexion.php");
             $cont = $_REQUEST['cont'];
             $tel = $_REQUEST['tel'];
 
-            $query = "INSERT INTO datos_form3 VALUES ('$nom_emp', '$nom_pue', '$func_pue', $sueldo, '$ubic', '$tipo_con', '$hor', '$email', '$cont', '$tel')";
+            $query = "INSERT INTO datos_form3 VALUES (0,'$nom_emp', '$nom_pue', '$func_pue', $sueldo, '$ubic', '$tipo_con', '$hor', '$email', '$cont', '$tel')";
 
             if ($result = mysqli_query($conn_practicaphp, $query)) {
                 echo "inserted succesfully";

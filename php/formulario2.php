@@ -1,5 +1,6 @@
-<?php 
-include_once("conexion.php");
+<?php
+
+require("conexion.php");
     if ($_SERVER['REQUEST_METHOD']=='POST') {
         $nom_empr = $_POST['nom_empr'];
         $rnc = $_POST['rnc'];
@@ -20,15 +21,22 @@ include_once("conexion.php");
         $clave = $_POST['clave'];
         $contacto = $_POST['contacto'];
 
-        $insert = "INSERT INTO datos_frm2 VALUES (0,'$nom_empr','$rnc',' $id_em','$dept','$alcance',
+        $insert = "INSERT INTO datos_frm2 VALUES ('$nom_empr','$rnc',' $id_em','$dept','$alcance',
         '$acti','$indu','$tama','$direc','$sector','$secc','$municipo','$pais','$telpri','$telsec','$mail','$clave','$contacto')";
 
-        mysqli_query($conn, $insert);
+        mysqli_query($conn_practicaphp, $insert);
 
-        header("location: index.php?insert=success");
+        if ($result = mysqli_query($conn_practicaphp, $query)) {
+          echo "inserted succesfully";
+      } else {
+          echo "Error";
+      }
 
-        $conn->close();
-    }
+      $conn_practicaphp->close();
+  }
+
+        
+    
 ?>
 
 <!DOCTYPE html>

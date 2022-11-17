@@ -66,8 +66,8 @@ require("conexion.php");
         <h1>Registro alummno o egresado</h1>
         <form method="post" action="">
 
-            <label for="año_gra">Año de graduación</label>
-            <select name="año_gra" id="año_gra">
+            <label for="ano_gra">Año de graduación</label>
+            <select name="ano_gra" id="ano_gra">
               <option value="1992">1992</option>
               <option value="1993">1993</option>
               <option value="1994">1994</option>
@@ -104,7 +104,7 @@ require("conexion.php");
 
             <!--agregar fichero para cv-->
 
-            <label for="nom_inst">Institucion educativa a la que pertenece</label>
+            <label for="institucion">Institucion educativa a la que pertenece</label>
             <select name="institucion" id="institucion">
               <option value="IPISA">IPISA</option>
               <option value="Otra">IPIDBOSCO</option>
@@ -129,8 +129,8 @@ require("conexion.php");
             <br>
 
             
-            <label for="cedula">Carrera Técnica</label>
-            <input type="text" name="cedula" id="cedula" class="form-control">
+            <label for="carr_tec">Carrera Técnica</label>
+            <input type="text" name="carr_tec" id="carr_tec" class="form-control">
             <br>
 
             
@@ -139,7 +139,7 @@ require("conexion.php");
             <br>
 
             <label for="nombres">Nombres</label>
-            <input type="text" name="nombres" id="tec_bac" class="form-control">
+            <input type="text" name="nombres" id="nombres" class="form-control">
             <br>
 
             <label for="apellidos">Apellidos</label>
@@ -193,12 +193,12 @@ require("conexion.php");
             <input type="text" name="email" id="email" class="form-control">
             <br>
             
-            <label for="contrasena">Contrasena</label>
+            <label for="contrasena">Contraseña</label>
             <input type="password" name="contrasena" id="contrasena" class="form-control">
             <br>
 
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Listo!</button>
+                <button class="btn btn-primary" type="submit">Listo!</button>
             </div>
         </form>
 
@@ -207,7 +207,37 @@ require("conexion.php");
         require("conexion.php");
         
         if ($_SERVER['REQUEST_METHOD']=='POST') {
-          $nom_empr = $_POST['nom_empr'];
+          $ano_gra = $_POST['ano_gra'];
+          $institucion = $_POST['institucion'];
+          $curso = $_POST['curso'];
+          $matricula = $_POST['matricula'];
+          $cedula = $_POST['cedula'];
+          $carr_tec= $_POST['carr_tec'];
+          $tec_bac = $_POST['tec_bac'];
+          $nombres = $_POST['nombres'];
+          $apellidos = $_POST['apellidos'];
+          $fecha_nac = $_POST['fecha_nac'];
+          $sexo = $_POST['sexo'];
+          $seccion= $_POST['seccion'];
+          $municipio = $_POST['municipio'];
+          $provincia = $_POST['provincia'];
+          $pais= $_POST['pais'];
+          $tel_res = $_POST['tel_res'];
+          $tel_mov = $_POST['tel_mov'];
+          $lic = $_POST['lic'];
+          $veh = $_POST['veh'];
+          $email = $_POST['email'];
+          $contrasena = $_POST['contrasena'];
+
+          $query = "INSERT INTO datos_form1 VALUES ('$ano_gra','$institucion','$curso','$matricula','$cedula','$carr_tec','$tec_bac','$nombres','$apellidos','$fecha_nac','$sexo','$seccion','$municipio','$provincia','$pais','$tel_res','$tel_mov','$lic','$veh','$email','$contrasena')";
+
+          if ($result = mysqli_query($conn_practicaphp, $query)) {
+            echo "Insertado Existosamente!!";
+          } else {
+            echo "Error";
+          }
+
+        $conn_practicaphp->close();
 
         }
 

@@ -177,15 +177,6 @@ require("conexion.php");
                     <th scope="col">CONTRASEÑA</th>
                 </tr>
             </thead>
-            <?php 
-            if ($_SERVER['REQUEST_METHOD']=='POST') {
-                if (isset($filtro)){
-                    $result = mysqli_query($conn_practicaphp, $select);
-                    $resultCheck = mysqli_num_rows($result);
-            ?>
-            <?php
-                } else {
-            ?>
                 <tbody>
                 <?php
                     $select = "SELECT * FROM datos_form1";
@@ -218,14 +209,14 @@ require("conexion.php");
                                 <td>". $row['vehiculo_propio'] ."</td>
                                 <td>". $row['email'] ."</td>
                                 <td>". $row['contrasena'] ."</td>
-                                <td><a href='delete.php?id=$row[id]'>Borrar</td>
+                                <td><a href='./frm3/delete.php?id=$row[id]'>Borrar</td>
                                 <td><a href='./frm1/update.php?id=$row[id]'>Editar</td>
                             </tr>";
                         }
                     }
                 ?>
                 </tbody>
-                <?php }}?>
+                
             </table>
         </div>
 

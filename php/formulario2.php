@@ -70,18 +70,18 @@
         <form method="post" action="">
               
           <div class="form-group"> 
-              <label for="full_empresa_id" class="control-label">Nombre de la empresa</label>
-              <input type="text" class="form-control" id="full_empresa_id" name="nom_empr" placeholder="Nombre" required>
+              <label for="nom_empresa" class="control-label">Nombre de la empresa</label>
+              <input type="text" class="form-control" id="nom_empresa" name="nom_empresa" placeholder="Nombre" required>
           </div>    
 
           <div class="form-group">
-              <label for="rnc" class="control-label">RNC</label>
-              <input type="text" class="form-control" id="rnc" name="rnc" placeholder="0022541898" required>
+              <label for="RNC" class="control-label">RNC</label>
+              <input type="text" class="form-control" id="RNC" name="RNC" placeholder="0022541898" required>
           </div>
           <br>
-          <label for="full_name_id" class="control-label">¿Desea que se conozca la identidad de su empresa?</label> <br>
+          <label for="identidad_empresa" class="control-label">¿Desea que se conozca la identidad de su empresa?</label> <br>
 
-          <input type="radio" class="form-check-input" name="ident" value="si" id="ident1">
+          <input type="radio" class="form-check-input" name="identidad_empresa" value="si" id="ident1">
           <label class="form-check-label" for="ident1">Sí</label>
           <br>
 
@@ -89,18 +89,18 @@
           <label class="form-check-label" for="ident">No</label>
           <br><br>
 
-          <label for="full_name_id" class="control-label">¿Dispone su empresa de un Departamento de Formación dentro de la empresa?</label> <br>
+          <label for="departamento_formacion" class="control-label">¿Dispone su empresa de un Departamento de Formación dentro de la empresa?</label> <br>
 
-          <input type="radio" class="form-check-input" name="dept" value="si" id="depto1">
-          <label class="form-check-label" for="depto1">Sí</label>
+          <input type="radio" class="form-check-input" name="departamento_formacion" value="si" id="departamento_formacion">
+          <label class="form-check-label" for="departamento_formacion">Sí</label>
           <br>
-          <input type="radio" class="form-check-input" name="dept" value="no" id="depto2">
-          <label class="form-check-label" for="depto2">No</label>
+          <input type="radio" class="form-check-input" name="departamento_formacion" value="no" id="departamento_formacion">
+          <label class="form-check-label" for="departamento_formacion">No</label>
           <br><br>
 
-          <label for="full_name_id" class="control-label">Alcance de la empresa </label> <br>
+          <label for="alcance_empresa" class="control-label">Alcance de la empresa </label> <br>
 
-          <input type="radio" class="form-check-input" name="alcance" value="nac" id="nac">
+          <input type="radio" class="form-check-input" name="alcance_empresa" value="nac" id="nac">
           <label class="form-check-label" for="nac">Nacional</label>
           <br>
           <input type="radio" class="form-check-input" name="alcance" value="loc" id="loc">
@@ -108,13 +108,13 @@
 
           <br>
           <br>
-          <label for="act_eco" class="control-label">Actividad económica a la que se dedica la empresa </label> <br>
-          <textarea type="textarea" name="act_eco" class="form-control" id="act_eco" required></textarea><br>
+          <label for="actividad_economica" class="control-label">Actividad económica a la que se dedica la empresa </label> <br>
+          <textarea type="textarea" name="actividad_economica" class="form-control" id="actividad_economica" required></textarea><br>
 
           <div class="form-group"> 
               <label for="state_id" class="control-label">Industria</label><br>
 
-              <select class="form-control" id="state_id" name="indu" required>
+              <select class="form-control" id="industria" name="industria" required>
                   <option value="ind">Industrial</option>
                   <option value="serv">servicio</option><br>
               </select>
@@ -122,32 +122,32 @@
                   <br>
 
           <div class="form-group"> 
-              <label for="cap" class="control-label">Capacidad de la empresa</label><br>
+              <label for="tamaño_empresa" class="control-label">Capacidad de la empresa</label><br>
 
-              <select class="form-control" id="cap" name="cap" required>
+              <select class="form-control" id="tamaño_empresa" name="tamaño_empresa" required>
                   <option value="grande">Grande</option>
                   <option value="Peq">Pequeña</option>
               </select>
                   
                   <br>
-          <label for="dir" class="control-label">Dirección </label><br>
-          <input type="textbox" name="dir" class="form-control" id="dir" required><br>
+          <label for="direccion" class="control-label">Dirección </label><br>
+          <input type="textbox" name="direccion" class="form-control" id="direccion" required><br>
           
-          <label for="sect" class="control-label">Sector </label> <br>
-          <input type="textbox" name="sect" class="form-control" id="sect" required><br>
+          <label for="sector" class="control-label">Sector </label> <br>
+          <input type="textbox" name="sector" class="form-control" id="sector" required><br>
           
           <label for="secc" class="control-label">Sección</label> <br>
-          <input type="textbox" name="secc" class="form-control" id="secc" required><br>
+          <input type="textbox" name="seccion" class="form-control" id="seccion" required><br>
           
-          <label for="mun" class="control-label">Municipio</label> <br>
-          <input type="textbox" name="mun" class="form-control" id="mun" required><br>
+          <label for="municipio" class="control-label">Municipio</label> <br>
+          <input type="textbox" name="municipio" class="form-control" id="municipio" required><br>
 
-          <label for="prov" class="control-label">Provincia</label> <br>
-          <input type="textbox" name="prov" class="form-control" id="prov" required>
+          <label for="provincia" class="control-label">Provincia</label> <br>
+          <input type="textbox" name="provincia" class="form-control" id="provincia" required>
 
           <br><br>
-          <label for="state_id" class="control-label">País donde opera</label><br>
-          <select class="form-control" id="state_id" name="pais" required>
+          <label for="pais_operacion" class="control-label">País donde opera</label><br>
+          <select class="form-control" id="pais_operacion" name="pais_operacion" required>
               <option value="RD">República Dominicana</option>            
           </select>
           <br>
@@ -157,7 +157,7 @@
           <br>
           <label for="clave" class="control-label">Clave</label> 
           <br>
-          <input type="password" name="clave" class="form-control" id="clave" required>
+          <input type="password" name="contraseña" class="form-control" id="contraseña" required>
           <br>      
 
           <label for="ver_email" class="control-label">Confirmación de correo</label> 
@@ -172,14 +172,14 @@
           <br>
           <br>
           <br>
-          <label for="tel_prin" class="control-label">Teléfono principal</label> 
+          <label for="telefono_pri" class="control-label">Teléfono principal</label> 
           <br>
-          <input type="textbox" name="tel_prin" class="form-control" id="tel_prin" placeholder="000-000-000" required>       
+          <input type="textbox" name="telefono_pri" class="form-control" id="tel_prin" placeholder="000-000-000" required>       
 
           <br>
-          <label for="tel_dir" class="control-label">Teléfono directo</label> 
+          <label for="telefono_di" class="control-label">Teléfono directo</label> 
           <br>
-          <input type="textbox" name="tel_dir" class="form-control" id="tel_dr" placeholder="000-000-0000" required>   
+          <input type="textbox" name="telefono_di" class="form-control" id="tel_dr" placeholder="000-000-0000" required>   
           <br>
           <br>
           <label for="cont_empr" class="control-label">Contacto empresa</label> 
@@ -206,32 +206,34 @@
 
 require("conexion.php");
     if ($_SERVER['REQUEST_METHOD']=='POST') {
-        $nom_empr = $_POST['nom_empr'];
-        $rnc = $_POST['rnc'];
-        $id_em = $_POST['ident'];
-        $dept = $_POST['dept'];
-        $alcance = $_POST['alcance'];
-        $acti = $_POST['act_eco'];
-        $indu = $_POST['indu'];
-        $tama = $_POST['cap'];
-        $direc = $_POST['dir'];
-        $sector = $_POST['sect'];
-        $secc = $_POST['secc'];
-        $provincia = $_POST['prov'];
-        $municipo = $_POST['mun'];
-        $pais = $_POST['pais'];
-        $telpri = $_POST['tel_prin'];
-        $telsec = $_POST['tel_dir'];
-        $contacto = $_POST['cont_empr'];
-        $mail = $_POST['email'];
-        $clave = $_POST['clave'];
-        $tel_ext = $_POST['tel_ext'];
+      $nom_empr =$_POST['nom_empresa'];
+      $rnc = $_POST['RNC'];
+      $id_em = $_POST['identidad_empresa'];
+      $dept = $_POST['departamento_formacion'];
+      $alcance = $_POST['alcance_empresa'];
+      $acti = $_POST['actividad_economica'];
+      $indu = $_POST['industria'];
+      $tama = $_POST['tamaño_empresa'];
+      $direc = $_POST['direccion'];
+      $sector = $_POST['sector'];
+      $secc = $_POST['seccion'];
+      $provincia = $_POST['provincia'];
+      $municipio = $_POST['municipio'];
+      $pais = $_POST['pais_operacion'];
+      $telpri = $_POST['telefono_pri'];
+      $telsec = $_POST['telefono_di'];
+      $contacto = $_POST['cont_empr'];
+      $mail = $_POST['email'];
+      $clave = $_POST['contraseña'];
+      $tel_ext = $_POST['tel_ext'];
 
         $ver_clave = $_POST['ver_clave'];
         $ver_correo = $_POST['ver_email'];
 
         if ($clave == $ver_clave && $mail == $ver_correo) {
-          $insert = "INSERT INTO datos_form2 VALUES ('$nom_empr','$rnc',' $id_em','$dept','$alcance','$acti','$indu','$tama','$direc','$sector','$secc','$municipo','$provincia','$pais','$telpri','$telsec','$mail','$clave','$contacto','$tel_ext')";
+          $insert = "INSERT INTO datos_form2 VALUES (0, '$nom_empr','$rnc',' $id_em','$dept','$alcance',
+          '$acti','$indu','$tama','$direc','$sector','$secc','$municipio','$provincia','$pais','$telpri','$telsec',
+          '$mail','$clave','$contacto','$tel_ext')";
         
           // mysqli_query($conn_practicaphp, $insert);
         
@@ -247,7 +249,7 @@ require("conexion.php");
 
   }
 
-        
+      
     
 ?>
 

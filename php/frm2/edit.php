@@ -7,7 +7,7 @@ include_once("../conexion.php");
         $id_em = $_REQUEST['identidad_empresa'];
         $dept = $_REQUEST['departamento_formacion'];
         $alcance = $_REQUEST['alcance_empresa'];
-        $acti = $_REQUEST['actividad_econonomica'];
+        $acti = $_REQUEST['actividad_economica'];
         $indu = $_REQUEST['industria'];
         $tama = $_REQUEST['tamaño_empresa'];
         $direc = $_REQUEST['direccion'];
@@ -23,7 +23,7 @@ include_once("../conexion.php");
         $clave = $_REQUEST['contraseña'];
         $tel_ext = $_REQUEST['tel_ext'];
     $update="UPDATE datos_form2 SET nombre_empresa='$nom_empr', RNC='$rnc', identidad_empresa='$id_em', 
-    departamento_formacion='$dept', alcance_empresa='$alcance', actividad_econonomica='$acti',
+    departamento_formacion='$dept', alcance_empresa='$alcance', actividad_economica='$acti',
      industria='$indu', tamaño_empresa='$tama', direccion='$direc', sector='$sector',seccion='$secc',
      provincia='$provincia', municipio='$municipio', pais_operacion='$pais', telefono_pri='$telpri',
      telefono_di='$telsec', email='$mail', contraseña='$clave', tel_ext='$tel_ext' WHERE id=$cod";

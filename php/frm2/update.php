@@ -101,8 +101,8 @@
             <label for="alcance_empresa">alcance empresa</label>
             <input type="text" name="alcance_empresa" id="alcance_empresa" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
             <br>
-            <label for="actividad_econonomica">actividad economica</label>
-            <input type="text" name="actividad_econonomica" id="actividad_econonomica" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
+            <label for="actividad_economica">actividad economica</label>
+            <input type="text" name="actividad_economica" id="actividad_economica" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
 
             <br>
             <div class="form-group"> 

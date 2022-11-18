@@ -113,9 +113,9 @@ require("conexion.php");
                 <div class="col-auto">
                     <select name="hor" id="hor" class="form-select">
                         <option selected>Seleccione...</option>
-                        <option value="">a</option>
-                        <option value="">a</option>
-                        <option value="">a</option>
+                        <option value="7 a.m. - 3 p.m.">7 a.m. - 3 p.m.</option>
+                        <option value="9 a.m. - 5 p.m.">9 a.m. - 5 p.m.</option>
+                        <option value="6 p.m. - 6 a.m.">6 p.m. - 6 a.m.</option>
                     </select>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <?php
 include_once("../conexion.php");
-
+    
     $cod = $_REQUEST['id'];
     $ano_gra = $_REQUEST['ano_gra'];
     $institucion = $_REQUEST['institucion'];

@@ -26,7 +26,7 @@ include_once("../conexion.php");
     departamento_formacion='$dept', alcance_empresa='$alcance', actividad_economica='$acti',
      industria='$indu', tamaño_empresa='$tama', direccion='$direc', sector='$sector',seccion='$secc',
      provincia='$provincia', municipio='$municipio', pais_operacion='$pais', telefono_pri='$telpri',
-     telefono_di='$telsec', email='$mail', contraseña='$clave', tel_ext='$tel_ext' WHERE id=$cod";
+     telefono_di='$telsec', email='$mail', contacto_empresa='$contacto', contraseña='$clave', tel_ext='$tel_ext' WHERE id=$cod";
     
     mysqli_query($conn_practicaphp, $update);
 

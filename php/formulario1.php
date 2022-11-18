@@ -229,7 +229,7 @@ require("conexion.php");
           $email = $_POST['email'];
           $contrasena = $_POST['contrasena'];
 
-          $query = "INSERT INTO datos_form1 VALUES ('$ano_gra','$institucion','$curso','$matricula','$cedula','$carr_tec','$tec_bac','$nombres','$apellidos','$fecha_nac','$sexo','$seccion','$municipio','$provincia','$pais','$tel_res','$tel_mov','$lic','$veh','$email','$contrasena')";
+          $query = "INSERT INTO datos_form1 VALUES (0,'$ano_gra','$institucion','$curso','$matricula','$cedula','$carr_tec','$tec_bac','$nombres','$apellidos','$fecha_nac','$sexo','$seccion','$municipio','$provincia','$pais','$tel_res','$tel_mov','$lic','$veh','$email','$contrasena')";
 
           if ($result = mysqli_query($conn_practicaphp, $query)) {
             echo "Insertado Existosamente!!";

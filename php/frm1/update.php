@@ -25,7 +25,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 3 - Depto. Vinculación Laboral</title>
-    <link rel="icon" type="image/png" href="../multimedia/cropped-ipisa.ico">
+    <link rel="icon" type="image/png" href="../../multimedia/cropped-ipisa.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,10 +77,10 @@
         <h1>Información de vacante</h1>
         <form method="get" action="edit.php">
             <label for="id">ID</label>
-            <input type="text" id="id" name="id" value="7" class="form-control" readonly><br>
+            <input type="text" id="id" name="id" value="<?php echo $id;?>" class="form-control" readonly><br>
             
             <label for="ano_gra">Año de graduación</label>
-            <select name="ano_gra" id="ano_gra">
+            <select name="ano_gra" id="ano_gra" class="form-control">
               <option value="1992">1992</option>
               <option value="1993">1993</option>
               <option value="1994">1994</option>
@@ -116,14 +116,14 @@
             </br></br>
 
             <label for="institucion">Institucion educativa a la que pertenece</label>
-            <select name="institucion" id="institucion">
+            <select name="institucion" id="institucion" class="form-control">
               <option value="IPISA">IPISA</option>
               <option value="Otra">IPIDBOSCO</option>
             </select> 
             </br></br>
 
             <label for="curso">Curso</label>
-            <select name="curso" id="curso">
+            <select name="curso" id="curso"class="form-control">
               <option value="3ro">3ro de secundaria</option>
               <option value="4to">4to de secundaria</option>
               <option value="5to">5to de secundaria</option>
@@ -162,9 +162,9 @@
             <br>
 
             <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo">
-                <option value="Femenino">Femenino</option>
-                <option value="Masculino">Masculino</option>
+            <select name="sexo" id="sexo" class="form-control">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
             </select><br>
             <br>
 

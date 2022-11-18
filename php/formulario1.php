@@ -67,7 +67,7 @@ require("conexion.php");
         <form method="post" action="">
 
             <label for="ano_gra">Año de graduación</label>
-            <select name="ano_gra" id="ano_gra">
+            <select name="ano_gra" id="ano_gra" class="form-select">
               <option value="1992">1992</option>
               <option value="1993">1993</option>
               <option value="1994">1994</option>
@@ -105,14 +105,14 @@ require("conexion.php");
             <!--agregar fichero para cv-->
 
             <label for="institucion">Institucion educativa a la que pertenece</label>
-            <select name="institucion" id="institucion">
+            <select name="institucion" id="institucion" class="form-select">
               <option value="IPISA">IPISA</option>
               <option value="Otra">IPIDBOSCO</option>
             </select> 
             </br></br>
 
             <label for="curso">Curso</label>
-            <select name="curso" id="curso">
+            <select name="curso" id="curso" class="form-select">
               <option value="3ro">3ro de secundaria</option>
               <option value="4to">4to de secundaria</option>
               <option value="5to">5to de secundaria</option>
@@ -151,9 +151,9 @@ require("conexion.php");
             <br>
 
             <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo">
-                <option value="Femenino">Femenino</option>
-                <option value="Masculino">Masculino</option>
+            <select name="sexo" id="sexo" class="form-select">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
             </select><br>
             <br>
 

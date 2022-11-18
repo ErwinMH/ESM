@@ -84,25 +84,25 @@
             <br>
 
             <label for="nom_emp">RNC</label>
-            <input type="text" name="nom_pue" id="rnc" class="form-control" value="<?php echo $row['RNC'];?>">
+            <input type="text" name="RNC" id="rnc" class="form-control" value="<?php echo $row['RNC'];?>">
             <br>
 
             <label for="func_pue">Identidad empresa</label>
-            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['identidad_empresa'];?>">
+            <input type="text" name="id_em" id="func_pue" class="form-control" value="<?php echo $row['identidad_empresa'];?>">
 
             <br>
             <label for="func_pue">Departamento formacion</label>
-            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['departamento_formacion'];?>">
+            <input type="text" name="dept" id="dept" class="form-control" value="<?php echo $row['departamento_formacion'];?>">
 
             <br>
             </div>
             <br><br>
    
             <label for="ubic">alcance empresa</label>
-            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
+            <input type="text" name="alcance" id="alcance" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
             <br>
             <label for="func_pue">actividad economica</label>
-            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
+            <input type="text" name="acti" id="acti" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
 
             <br>
             <div class="form-group"> 

@@ -79,35 +79,35 @@
             <label for="id">ID</label>
             <input type="text" id="id" name="id" value="7" class="form-control" readonly>
 
-            <label for="nom_emp">Nombre de la empresa</label>
-            <input type="text" name="nom_emp" id="nom_emp" class="form-control" value="<?php echo $row['nombre_empresa'];?>">
+            <label for="nom_empresa">Nombre de la empresa</label>
+            <input type="text" name="nom_empresa" id="nom_empresa" class="form-control" value="<?php echo $row['nombre_empresa'];?>">
             <br>
 
-            <label for="nom_emp">RNC</label>
-            <input type="text" name="RNC" id="rnc" class="form-control" value="<?php echo $row['RNC'];?>">
+            <label for="RNC">RNC</label>
+            <input type="text" name="RNC" id="RNC" class="form-control" value="<?php echo $row['RNC'];?>">
             <br>
 
-            <label for="func_pue">Identidad empresa</label>
-            <input type="text" name="id_em" id="func_pue" class="form-control" value="<?php echo $row['identidad_empresa'];?>">
+            <label for="identidad_empresa">Identidad empresa</label>
+            <input type="text" name="identidad_empresa" id="identidad_empresa" class="form-control" value="<?php echo $row['identidad_empresa'];?>">
 
             <br>
-            <label for="func_pue">Departamento formacion</label>
-            <input type="text" name="dept" id="dept" class="form-control" value="<?php echo $row['departamento_formacion'];?>">
+            <label for="departamento_formacion">Departamento formacion</label>
+            <input type="text" name="departamento_formacion" id="departamento_formacion" class="form-control" value="<?php echo $row['departamento_formacion'];?>">
 
             <br>
             </div>
             <br><br>
    
-            <label for="ubic">alcance empresa</label>
-            <input type="text" name="alcance" id="alcance" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
+            <label for="alcance_empresa">alcance empresa</label>
+            <input type="text" name="alcance_empresa" id="alcance_empresa" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
             <br>
             <label for="func_pue">actividad economica</label>
-            <input type="text" name="acti" id="acti" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
+            <input type="text" name="actividad_economica" id="actividad_economica" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
 
             <br>
             <div class="form-group"> 
               <label for="state_id" class="control-label">Industria</label><br>
-              <select class="form-control" id="state_id" name="indu" required value = "<?php echo $row['industria'];?>">
+              <select class="form-control" id="industria" name="industria" required value = "<?php echo $row['industria'];?>">
                   <option value="ind">Industrial</option>
                   <option value="serv">servicio</option><br>
               </select>
@@ -115,39 +115,39 @@
                   <br>
 
           <div class="form-group"> 
-              <label for="cap" class="control-label">Capacidad de la empresa</label><br>
+              <label for="tamaño_empresa" class="control-label">Capacidad de la empresa</label><br>
   
 
-              <select class="form-control" id="cap" name="cap" required value="<?php echo $row['tamaño_empresa'];?>">
+              <select class="form-control" id="tamaño_empresa" name="tamaño_empresa" required value="<?php echo $row['tamaño_empresa'];?>">
 
                   <option value="grande">Grande</option>
                   <option value="Peq">Pequeña</option>
               </select>
                   
                   <br>
-          <label for="dir" class="control-label">Dirección </label><br>
-          <input type="textbox" name="dir" class="form-control" id="dir" required value="<?php echo $row['direccion'];?>">
+          <label for="direccion" class="control-label">Dirección </label><br>
+          <input type="textbox" name="direccion" class="form-control" id="direccion" required value="<?php echo $row['direccion'];?>">
 
           
-          <label for="sect" class="control-label">Sector </label> <br>
-          <input type="textbox" name="sect" class="form-control" id="sect" required value="<?php echo $row['sector'];?>">
+          <label for="sector" class="control-label">Sector </label> <br>
+          <input type="textbox" name="sector" class="form-control" id="sector" required value="<?php echo $row['sector'];?>">
 <br>
           
-          <label for="secc" class="control-label">Sección</label> <br>
-          <input type="textbox" name="secc" class="form-control" id="secc" required value="<?php echo $row['seccion'];?>">
+          <label for="seccion" class="control-label">Sección</label> <br>
+          <input type="textbox" name="seccion" class="form-control" id="seccion" required value="<?php echo $row['seccion'];?>">
 <br>
           
-          <label for="mun" class="control-label">Municipio</label> <br>
-          <input type="textbox" name="mun" class="form-control" id="mun" required value="<?php echo $row['municipio'];?>">
+          <label for="municipio" class="control-label">Municipio</label> <br>
+          <input type="textbox" name="municipio" class="form-control" id="municipio" required value="<?php echo $row['municipio'];?>">
 <br>
 
-          <label for="prov" class="control-label">Provincia</label> <br>
-          <input type="textbox" name="prov" class="form-control" id="prov" required value="<?php echo $row['provincia'];?>">
+          <label for="provincia" class="control-label">Provincia</label> <br>
+          <input type="textbox" name="provincia" class="form-control" id="provincia" required value="<?php echo $row['provincia'];?>">
 
 
           <br><br>
-          <label for="state_id" class="control-label">País donde opera</label><br>
-          <select class="form-control" id="state_id" name="pais" required value="<?php echo $row['pais_operacion'];?>">
+          <label for="pais_operacion" class="control-label">País donde opera</label><br>
+          <select class="form-control" id="pais_operacion" name="pais_operacion" required value="<?php echo $row['pais_operacion'];?>">
 
               <option value="RD">República Dominicana</option>            
           </select>
@@ -175,15 +175,15 @@
           <br>
           <br>
           <br>
-          <label for="tel_prin" class="control-label">Teléfono principal</label>
+          <label for="telefono_pri" class="control-label">Teléfono principal</label>
           <br>
-          <input type="textbox" name="tel_prin" class="form-control" id="tel_prin" placeholder="000-000-000" required value="<?php echo $row['telefono_pri'];?>">
+          <input type="textbox" name="telefono_pri" class="form-control" id="telefono_pri" placeholder="000-000-000" required value="<?php echo $row['telefono_pri'];?>">
        
 
           <br>
-          <label for="tel_dir" class="control-label">Teléfono directo</label> 
+          <label for="telefono_di" class="control-label">Teléfono directo</label> 
           <br>
-          <input type="textbox" name="tel_dir" class="form-control" id="tel_dr" placeholder="000-000-0000" required value="<?php echo $row['telefono_di'];?>">
+          <input type="textbox" name="telefono_di" class="form-control" id="telefono_di" placeholder="000-000-0000" required value="<?php echo $row['telefono_di'];?>">
    
           <br>
           <br>

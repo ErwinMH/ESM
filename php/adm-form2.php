@@ -112,6 +112,7 @@ require("conexion.php");
                                     <th scope='col'>email</th>
                                     <th scope='col'>contraseña</th>
                                     <th scope='col'>contacto empresa</th>
+                                    <th scope='col'>teléfono extensión</th>
                                 </tr>
                             </thead>
                             
@@ -172,6 +173,7 @@ require("conexion.php");
                     <th scope="col">Email</th>
                     <th scope="col">Contraseña</th>
                     <th scope="col">contacto empresa</th>
+                    <th scope="col">Teléfeno extensión</th>
 
 
 

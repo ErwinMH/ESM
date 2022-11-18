@@ -14,7 +14,7 @@ include_once("../conexion.php");
         $sector = $_REQUEST['sector'];
         $secc = $_REQUEST['seccion'];
         $provincia = $_REQUEST['provincia'];
-        $municipo = $_REQUEST['municipio'];
+        $municipio = $_REQUEST['municipio'];
         $pais = $_REQUEST['pais_operacion'];
         $telpri = $_REQUEST['telefono_pri'];
         $telsec = $_REQUEST['telefono_di'];

@@ -143,6 +143,8 @@ require("conexion.php");
                   <td><a href='./frm1/update.php?id=$row[id]'>Editar</td>
                   </tr>";
     }
+  }
+}
     ?>
 
 

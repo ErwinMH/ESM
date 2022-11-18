@@ -209,7 +209,7 @@ require("conexion.php");
                                 <td>". $row['vehiculo_propio'] ."</td>
                                 <td>". $row['email'] ."</td>
                                 <td>". $row['contrasena'] ."</td>
-                                <td><a href='./frm3/delete.php?id=$row[id]'>Borrar</td>
+                                <td><a href='./frm1/delete.php?id=$row[id]'>Borrar</td>
                                 <td><a href='./frm1/update.php?id=$row[id]'>Editar</td>
                             </tr>";
                         }

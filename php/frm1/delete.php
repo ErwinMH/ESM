@@ -1,5 +1,5 @@
 <?php
-    include_once("location: ../conexion.php");
+    include_once("../conexion.php");
     
         $id = $_REQUEST['id'];
 

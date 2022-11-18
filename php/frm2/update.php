@@ -4,7 +4,7 @@
     if ($_SERVER['REQUEST_METHOD']=='GET') {
             $id = $_REQUEST['id'];
     
-            $select = "SELECT * FROM datos_form3 WHERE id=$id";
+            $select = "SELECT * FROM datos_form2 WHERE id=$id";
     
             $result = mysqli_query($conn_practicaphp, $select);
             $resultCheck = mysqli_num_rows($result);
@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario 3 - Depto. Vinculación Laboral</title>
+    <title>Formulario 2 - Depto. Vinculación Laboral</title>
     <link rel="icon" type="image/png" href="../multimedia/cropped-ipisa.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,7 +74,7 @@
     <img src="multimedia/cropped-ipisa.png" class="mx-auto d-block" alt="" width="300px">
     <main class="container o-container">
     <div class="container-md" id="who">
-        <h1>Información de vacante</h1>
+        <h1>Información de Empresas </h1>
         <form method="get" action="edit.php">
             <label for="id">ID</label>
             <input type="text" id="id" name="id" value="7" class="form-control" readonly>
@@ -83,68 +83,121 @@
             <input type="text" name="nom_emp" id="nom_emp" class="form-control" value="<?php echo $row['nombre_empresa'];?>">
             <br>
 
-            <label for="nom_emp">Nombre del puesto</label>
-            <input type="text" name="nom_pue" id="nom_pue" class="form-control" value="<?php echo $row['nombre_puesto'];?>">
+            <label for="nom_emp">RNC</label>
+            <input type="text" name="nom_pue" id="rnc" class="form-control" value="<?php echo $row['RNC'];?>">
             <br>
 
-            <label for="func_pue">Función/perfil del puesto</label>
-            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['perfil_puesto'];?>">
+            <label for="func_pue">Identidad empresa</label>
+            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['identidad_empresa'];?>">
 
             <br>
-            <div class="row g-2 align-items-center">
-                <div class="col-auto">
-                    <label for="sueldo" class="col-form-label">Sueldo</label>
-                </div>
-                <div class="col-auto">
-                    <input type="number" name="sueldo" id="sueldo" class="form-control" placeholder="0000.00" value="<?php echo $row['sueldo'];?>">
-                </div>
+            <label for="func_pue">Departamento formacion</label>
+            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['departamento_formacion'];?>">
+
+            <br>
             </div>
             <br><br>
    
-            <label for="ubic">Ubicación</label>
-            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="31000, Santiago, XXXX" value="<?php echo $row['ubicacion'];?>">
+            <label for="ubic">alcance empresa</label>
+            <input type="text" name="ubic" id="ubic" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
             <br>
+            <label for="func_pue">actividad economica</label>
+            <input type="text" name="func_pue" id="func_pue" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
 
-            <span>Tipo de contrato</span><br>
+            <br>
+            <div class="form-group"> 
+              <label for="state_id" class="control-label">Industria</label><br>
+              <select class="form-control" id="state_id" name="indu" required value = "<?php echo $row['industria'];?>">
+                  <option value="ind">Industrial</option>
+                  <option value="serv">servicio</option><br>
+              </select>
 
-            <p><i>Asegurese de elegir una opción</i></p>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con1" value="temp">
-                <label class="form-check-label" for="tipo_con1">
-                    Temporal
-                </label>
-                </div>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_con" id="tipo_con2" value="fijo">
-                <label class="form-check-label" for="tipo_con2">
-                    Fijo
-                </label>
-            </div>
-            <br>
+                  <br>
 
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                    <label for="hor">Horario</label>
-                </div>
-                <div class="col-auto">
-                    <select name="hor" id="hor" class="form-select">
-                        <option selected><?php echo $row['horario'];?></option>
-                    </select>
-                </div>
-            </div>
-            
-            <br>
-            <label for="email">Correo a enviar los currículum</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@gmail.com" value="<?php echo $row['correo'];?>">
-            <br>
+          <div class="form-group"> 
+              <label for="cap" class="control-label">Capacidad de la empresa</label><br>
+  
 
-            <label for="cont">Persona de contacto</label>
-            <input type="text" name="cont" id="cont" class="form-control" value="<?php echo $row['persona_contacto'];?>">
-            <br>
+              <select class="form-control" id="cap" name="cap" required value="<?php echo $row['tamaño_empresa'];?>">
 
-            <label for="tel">Teléfono</label>
-            <input type="tel" name="tel" id="tel" class="form-control" placeholder="XXX-XXX-XXXX" value="<?php echo $row['telefono'];?>">
-            <br>
+                  <option value="grande">Grande</option>
+                  <option value="Peq">Pequeña</option>
+              </select>
+                  
+                  <br>
+          <label for="dir" class="control-label">Dirección </label><br>
+          <input type="textbox" name="dir" class="form-control" id="dir" required value="<?php echo $row['direccion'];?>">
+
+          
+          <label for="sect" class="control-label">Sector </label> <br>
+          <input type="textbox" name="sect" class="form-control" id="sect" required value="<?php echo $row['sector'];?>">
+><br>
+          
+          <label for="secc" class="control-label">Sección</label> <br>
+          <input type="textbox" name="secc" class="form-control" id="secc" required value="<?php echo $row['seccion'];?>">
+><br>
+          
+          <label for="mun" class="control-label">Municipio</label> <br>
+          <input type="textbox" name="mun" class="form-control" id="mun" required value="<?php echo $row['municipio'];?>">
+><br>
+
+          <label for="prov" class="control-label">Provincia</label> <br>
+          <input type="textbox" name="prov" class="form-control" id="prov" required value="<?php echo $row['provincia'];?>">
+>
+
+          <br><br>
+          <label for="state_id" class="control-label">País donde opera</label><br>
+          <select class="form-control" id="state_id" name="pais" required value="<?php echo $row['pais_operacion'];?>">
+>
+              <option value="RD">República Dominicana</option>            
+          </select>
+          <br>
+          <label for="email" class="control-label">Correo</label> 
+          <br>
+          <input type="email" name="email" class="form-control" id="email" required value="<?php echo $row['email'];?>">
+>       
+          <br>
+          <label for="clave" class="control-label">Clave</label> 
+          <br>
+          <input type="password" name="clave" class="form-control" id="clave" required value="<?php echo $row['contraseña'];?>">
+>
+          <br>      
+
+          <label for="ver_email" class="control-label">Confirmación de correo</label> 
+          <br>
+          <input type="email" name="ver_email" class="form-control" id="ver_email" required>       
+          <br>
+          <label for="ver_clave" class="control-label">Confirmación de clave</label> 
+          <br>
+          <input type="password" name="ver_clave" class="form-control" id="ver_clave" required>
+          <br>
+
+          <br>
+          <br>
+          <br>
+          <label for="tel_prin" class="control-label">Teléfono principal</label>
+          <br>
+          <input type="textbox" name="tel_prin" class="form-control" id="tel_prin" placeholder="000-000-000" required value="<?php echo $row['telefono_pri'];?>">
+       
+
+          <br>
+          <label for="tel_dir" class="control-label">Teléfono directo</label> 
+          <br>
+          <input type="textbox" name="tel_dir" class="form-control" id="tel_dr" placeholder="000-000-0000" required value="<?php echo $row['telefono_di'];?>">
+   
+          <br>
+          <br>
+          <label for="cont_empr" class="control-label">Contacto empresa</label> 
+          <br>
+          <input type="textbox" name="cont_empr" class="form-control" id="cont_empr" required value="<?php echo $row['contacto_empresa'];?>">
+  
+          <br>
+          <label for="tel_ext" class="control-label">Teléfono y extensión</label> 
+          <br>
+          <input type="textbox" name="tel_ext" class="form-control" id="tel_ext" placeholder="000-000-0000" required>       
+
+          <br>
+
             <div class="d-grid gap-2 col-6 mx-auto">
                 <input class="btn btn-primary" type="submit" value="Editar"></a>
             </div>

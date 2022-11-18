@@ -157,9 +157,9 @@
           <input type="email" name="email" class="form-control" id="email" required value="<?php echo $row['email'];?>">
       
           <br>
-          <label for="clave" class="control-label">Clave</label> 
+          <label for="contraseña" class="control-label">Clave</label> 
           <br>
-          <input type="password" name="clave" class="form-control" id="clave" required value="<?php echo $row['contraseña'];?>">
+          <input type="password" name="contraseña" class="form-control" id="contraseña" required value="<?php echo $row['contraseña'];?>">
 
           <br>      
 

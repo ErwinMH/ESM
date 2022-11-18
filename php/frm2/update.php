@@ -101,12 +101,12 @@
             <label for="alcance_empresa">alcance empresa</label>
             <input type="text" name="alcance_empresa" id="alcance_empresa" class="form-control" placeholder="" value="<?php echo $row['alcance_empresa'];?>">
             <br>
-            <label for="func_pue">actividad economica</label>
-            <input type="text" name="actividad_economica" id="actividad_economica" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
+            <label for="actividad_econonomica">actividad economica</label>
+            <input type="text" name="actividad_econonomica" id="actividad_econonomica" class="form-control" value="<?php echo $row['actividad_econonomica'];?>">
 
             <br>
             <div class="form-group"> 
-              <label for="state_id" class="control-label">Industria</label><br>
+              <label for="industria" class="control-label">Industria</label><br>
               <select class="form-control" id="industria" name="industria" required value = "<?php echo $row['industria'];?>">
                   <option value="ind">Industrial</option>
                   <option value="serv">servicio</option><br>
@@ -136,16 +136,18 @@
           <label for="seccion" class="control-label">Sección</label> <br>
           <input type="textbox" name="seccion" class="form-control" id="seccion" required value="<?php echo $row['seccion'];?>">
 <br>
+
+ <label for="provincia" class="control-label">Provincia</label> <br>
+          <input type="textbox" name="provincia" class="form-control" id="provincia" required value="<?php echo $row['provincia'];?>">
+
+
+          <br>
           
           <label for="municipio" class="control-label">Municipio</label> <br>
           <input type="textbox" name="municipio" class="form-control" id="municipio" required value="<?php echo $row['municipio'];?>">
 <br>
 
-          <label for="provincia" class="control-label">Provincia</label> <br>
-          <input type="textbox" name="provincia" class="form-control" id="provincia" required value="<?php echo $row['provincia'];?>">
-
-
-          <br><br>
+         <br>
           <label for="pais_operacion" class="control-label">País donde opera</label><br>
           <select class="form-control" id="pais_operacion" name="pais_operacion" required value="<?php echo $row['pais_operacion'];?>">
 

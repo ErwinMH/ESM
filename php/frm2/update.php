@@ -194,7 +194,9 @@
           <br>
           <label for="tel_ext" class="control-label">Teléfono y extensión</label> 
           <br>
-          <input type="textbox" name="tel_ext" class="form-control" id="tel_ext" placeholder="000-000-0000" required>       
+          <input type="textbox" name="tel_ext" class="form-control" id="tel_ext" placeholder="000-000-0000" required value="<?php echo $row['tel_ext'];?>">
+  
+  <br>       
 
           <br>
 

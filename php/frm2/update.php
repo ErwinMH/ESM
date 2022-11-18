@@ -77,7 +77,7 @@
         <h1>Información de Empresas </h1>
         <form method="get" action="edit.php">
             <label for="id">ID</label>
-            <input type="text" id="id" name="id" value="7" class="form-control" readonly>
+            <input type="text" id="id" name="id" value="<?php echo $id;?>" class="form-control" readonly>
 
             <label for="nom_empresa">Nombre de la empresa</label>
             <input type="text" name="nom_empresa" id="nom_empresa" class="form-control" value="<?php echo $row['nombre_empresa'];?>">

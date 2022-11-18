@@ -122,7 +122,7 @@ require("conexion.php");
                             <td>". $row['identidad_empresa']  ."</td>
                             <td>". $row['departamento_formacion']  ."</td>
                             <td>". $row['alcance_empresa'] ."</td>
-                            <td>". $row['actividad_econonomica']    ."</td>
+                            <td>". $row['actividad_economica']    ."</td>
                             <td>". $row['industria']  ."</td>
                             <td>". $row['tamaño_empresa']  ."</td>
                             <td>". $row['direccion'] ."</td>
@@ -193,7 +193,7 @@ require("conexion.php");
                                 <td>". $row['identidad_empresa']  ."</td>
                                 <td>". $row['departamento_formacion']  ."</td>
                                 <td>". $row['alcance_empresa'] ."</td>
-                                <td>". $row['actividad_econonomica']    ."</td>
+                                <td>". $row['actividad_economica']    ."</td>
                                 <td>". $row['industria']  ."</td>
                                 <td>". $row['tamaño_empresa']  ."</td>
                                 <td>". $row['direccion'] ."</td>

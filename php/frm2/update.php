@@ -131,36 +131,36 @@
           
           <label for="sect" class="control-label">Sector </label> <br>
           <input type="textbox" name="sect" class="form-control" id="sect" required value="<?php echo $row['sector'];?>">
-><br>
+<br>
           
           <label for="secc" class="control-label">Sección</label> <br>
           <input type="textbox" name="secc" class="form-control" id="secc" required value="<?php echo $row['seccion'];?>">
-><br>
+<br>
           
           <label for="mun" class="control-label">Municipio</label> <br>
           <input type="textbox" name="mun" class="form-control" id="mun" required value="<?php echo $row['municipio'];?>">
-><br>
+<br>
 
           <label for="prov" class="control-label">Provincia</label> <br>
           <input type="textbox" name="prov" class="form-control" id="prov" required value="<?php echo $row['provincia'];?>">
->
+
 
           <br><br>
           <label for="state_id" class="control-label">País donde opera</label><br>
           <select class="form-control" id="state_id" name="pais" required value="<?php echo $row['pais_operacion'];?>">
->
+
               <option value="RD">República Dominicana</option>            
           </select>
           <br>
           <label for="email" class="control-label">Correo</label> 
           <br>
           <input type="email" name="email" class="form-control" id="email" required value="<?php echo $row['email'];?>">
->       
+      
           <br>
           <label for="clave" class="control-label">Clave</label> 
           <br>
           <input type="password" name="clave" class="form-control" id="clave" required value="<?php echo $row['contraseña'];?>">
->
+
           <br>      
 
           <label for="ver_email" class="control-label">Confirmación de correo</label> 

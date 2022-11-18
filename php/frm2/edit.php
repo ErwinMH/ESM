@@ -30,7 +30,7 @@ include_once("../conexion.php");
     
     mysqli_query($conn_practicaphp, $update);
 
-    header("../adm-form2.php?update=success");
+    header("location: ../adm-form2.php?update=success");
 
     $conn_practicaphp->close();
 
